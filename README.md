@@ -59,12 +59,12 @@ Optimizing inputs is very important when building trading algorithms, this frame
 
 •	A portfolio of underlying’s can also be brute tested for stronger results
 
+![Alt text](https://snag.gy/vwfbR7.jpg)
+
+![Alt text](https://snag.gy/WcmV8R.jpg)
+
 
 
 ![Alt text](https://snag.gy/oYVcyL.jpg)
 
 ![Alt text](https://snag.gy/sIFjlu.jpg)
-
-![Alt text](https://snag.gy/vwfbR7.jpg)
-
-![Alt text](https://snag.gy/WcmV8R.jpg)
