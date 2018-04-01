@@ -45,15 +45,13 @@ Simulating the market includes a few different things:
 
 •	Managing option contract expiration and data gaps
 
-
+![Alt text](https://snag.gy/f3M4K9.jpg)
 
 
 
 ![Alt text](https://snag.gy/oYVcyL.jpg)
 
 ![Alt text](https://snag.gy/sIFjlu.jpg)
-
-![Alt text](https://snag.gy/f3M4K9.jpg)
 
 ![Alt text](https://snag.gy/vwfbR7.jpg)
 
