@@ -1,8 +1,11 @@
-# Option-Back-Testing-Framework-
+# Option-Back-Testing-Framework
 
-# Goal of project
-The goal of the project was to streamline the process for option strategy devolpement. 
-
+# The Goal
+The goal of the project was to streamline the process for developing systemic automated option trading strategies. The solution was to build a framework to manage all the moving parts including: 
+•	Data management
+•	Simulating the market
+•	Testing and optimizing trading algorithm inputs
+•	Visualizing performance and calculating relevant stats
 
 
 
