@@ -256,7 +256,7 @@ public abstract class Strategy {
 	private void outputReport() {
 		if(isMaster && !isPortfolio) {
 			stratData.get(0).createTimeSeriesChart(0, 0, "Date", "Account Value", "Account Value");
-			stratData.get(1).createHistogram(0, "Buckets", "Amount", 50);
+			stratData.get(1).createHistogram(0, "Buckets", "Amount", 50, "Daily Return Histogram");
 			charts.set(0, stratData.get(0).getChart());
 			charts.set(1, stratData.get(1).getChart());
 		}

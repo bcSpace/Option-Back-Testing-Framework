@@ -7,7 +7,7 @@ public class StrategyBrute {
 	//First rating is always annual return
 	//Second rating is always sharpe ratio
 	
-	private String inputs;
+	private String inputs = "";
 	private ArrayList<Double> ratings = new ArrayList<Double>(); 
 	
 	public void create(double input[]) {
@@ -15,6 +15,7 @@ public class StrategyBrute {
 			if(i == 0) inputs = input[i]+"";
 			else inputs += ","+input[i]; 
 		}
+		System.out.println(inputs);
 	}
 	
 	public void addRating(double d) {this.ratings.add(d);}
@@ -23,6 +24,5 @@ public class StrategyBrute {
 	
 	public String getInputs() {return inputs;}
 	public double getRating(int i) {return ratings.get(i);}
-	
 	
 }

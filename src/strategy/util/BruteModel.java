@@ -69,6 +69,7 @@ public class BruteModel {
 					highest = data1.get(ii).getRating(ratingId);
 				}
 			}
+			top[i] = data1.get(id);
 			data1.remove(id); 
 		}
 		return top;

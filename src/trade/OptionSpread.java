@@ -6,19 +6,14 @@ import data.OptionData;
 
 public class OptionSpread {
 	
-	private boolean hasUnderlying;
 	private double underlyingPrice;
-	private double underlyingSize;
 	private int underlyingPos;
 	
 	private ArrayList<OptionContract> options = new ArrayList<OptionContract>();
 	
 	public void addUnderlying(double underlyingPrice, double underlyingSize, int pos) {
 		this.underlyingPrice = underlyingPrice;
-		this.underlyingSize = underlyingSize;
 		this.underlyingPos = pos;
-		if(underlyingPos != 0) hasUnderlying = true;
-		else hasUnderlying = false;
 	}
 	
 	public void addOptionContract(OptionContract option) {

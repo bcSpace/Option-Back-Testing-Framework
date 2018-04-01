@@ -17,7 +17,6 @@ public class Gui {
 	private JTabbedPane mainPanel; 
 	
 	private DataManagement dataPanel;
-	private StrategyPanel stratPanel;
 	
 	public Gui(Controller c) {
 		controller = c;
@@ -28,7 +27,6 @@ public class Gui {
 		frame.setSize(1200,800);
 		frame.setResizable(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//		frame.setVisible(true);
 		frame.setLocationRelativeTo(null);
 		
 		frame.setLayout(new GridLayout(1,1));

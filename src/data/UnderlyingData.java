@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 import loader.FileLoader;
 import main.Controller;
-import manager.DateManager;
 
 public class UnderlyingData {
 	

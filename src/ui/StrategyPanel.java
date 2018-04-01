@@ -33,7 +33,7 @@ import strategy.Strategy;
 import strategy.util.StrategyBrute;
 import trade.Trade;
 
-public class StrategyPanel extends JPanel implements PanelController {
+public class StrategyPanel extends JPanel {
 	
 	//every strategy panel will have three things
 	
@@ -49,8 +49,8 @@ public class StrategyPanel extends JPanel implements PanelController {
 	
 	//polish
 	private final DecimalFormat formatter = new DecimalFormat("#.00"); 
-	private String bruteLog = "B:\\backtester\\log\\strategyName\\brute.log";
-	private String testingLog = "B:\\backtester\\log\\strategyName\\testing.log";
+	private String bruteLog = "";
+	private String testingLog = "";
 	
 	private JTabbedPane tabedPanel;
 	
@@ -87,11 +87,6 @@ public class StrategyPanel extends JPanel implements PanelController {
 		testingLog = "B:\\backtester\\log\\"+strategyName+"\\testing.log";
 		
 		tabedPanel = new JTabbedPane();
-		ArrayList<String> i = new ArrayList<String>();
-		i.add("Take Profit");
-		i.add("Stop Loss");
-		i.add("Start Day");
-		i.add("End Day");
 		
 		addInputs();
 		createBrute();

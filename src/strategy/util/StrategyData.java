@@ -53,10 +53,6 @@ public class StrategyData {
 	}
 	
 	public void createTimeSeriesChart(int labelId, int dataId, String xName, String yName, String dataName) {
-		double minPrice = 0;
-		double highPrice = 0;
-		
-		
 		TimeSeries series = new TimeSeries(dataName);
 		for(int i = 0; i < labels.get(labelId).size(); i++) {
 			String time = labels.get(labelId).get(i);
@@ -72,7 +68,7 @@ public class StrategyData {
 		
 	}
 	
-	public void createHistogram(int dataId, String xLabel, String yLabel, int bins) {
+	public void createHistogram(int dataId, String xLabel, String yLabel, int bins, String name) {
 		
 		double tabs[] = new double[data.get(dataId).size()];
 		
@@ -84,7 +80,7 @@ public class StrategyData {
 		HistogramDataset dataset = new HistogramDataset();
 		dataset.setType(HistogramType.RELATIVE_FREQUENCY);
 		dataset.addSeries("Hist", tabs, bins);
-		chart = ChartFactory.createHistogram(dataName, xLabel, yLabel, dataset, PlotOrientation.VERTICAL, true, true, false);
+		chart = ChartFactory.createHistogram(name, xLabel, yLabel, dataset, PlotOrientation.VERTICAL, true, true, false);
 	}
 	
 	public double getAverage(int id) {

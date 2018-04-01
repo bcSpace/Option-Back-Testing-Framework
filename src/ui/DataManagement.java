@@ -36,7 +36,7 @@ public class DataManagement extends JPanel {
 		this.controller = controller;
 		
 		tableModel = new DefaultTableModel(0,0);
-		tableModel.setColumnIdentifiers(new String[] {"id","Underlying","Size","Status"});
+		tableModel.setColumnIdentifiers(new String[] {"id","Underlying","Historical days","Status"});
 		dataTable = new JTable(tableModel);
 		tableScroll = new JScrollPane(dataTable);
 		createDataTable();

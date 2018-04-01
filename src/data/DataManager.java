@@ -3,7 +3,6 @@ package data;
 import java.util.ArrayList;
 
 import main.Controller;
-import manager.DateManager;
 
 public class DataManager {
 	
@@ -20,7 +19,6 @@ public class DataManager {
 	}
 	
 	public void init() {
-		DateManager.init();
 		
 		loadingThread = new Thread() {
 			public synchronized void  run() {
@@ -75,7 +73,6 @@ public class DataManager {
 	//clearing all data
 	public void clear() {
 		data.clear();
-		DateManager.clear();
 	}
 	
 	//removing data
@@ -94,7 +91,7 @@ public class DataManager {
 		
 		//this should never happen, but if it does i'll know
 		System.err.println("GET UNDERLYING ERROR IN DataManager.java " + id);
-		System.exit(0);
+		System.exit(1);
 		return null;
 	}
 	

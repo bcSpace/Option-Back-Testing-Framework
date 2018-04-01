@@ -6,7 +6,7 @@ import data.DataManager;
 import data.UnderlyingData;
 import ui.Gui;
 
-public abstract class Controller {
+public class Controller {
 
 	//THIS CONTROLLER is mostly for managing data
 	
@@ -45,7 +45,67 @@ public abstract class Controller {
 		
 	}
 	
-	public abstract String sendCommand(String command); //should prolly move the code to this rather than having it be abstract 
+	public String sendCommand(String command){ 
+		//PARSING FOR DATA MANAGER LOADING
+		if(command.contains("exit")) System.exit(0);
+		if(command.startsWith("load")) {
+			String split[] = command.split(" ");
+			//load (id/stock) (id/stock) (m/i)
+			if(split.length != 4) return "Invalid args";
+			boolean mem = split[3].contains("m");
+			int id = -1; 
+			if(split[1].contains("id")) {
+				try { id = Integer.parseInt(split[2]); } catch(Exception e) {return "Invalid id " + e.getMessage();}
+				if(id == -1) return "Id out of range";
+			} else if(split[1].contains("stock")) {
+				id = this.convertId(split[2]);
+				if(id == -2) return "Invalid stock";
+			} else {
+				return "Invlaid item type";
+			}
+		
+			int status = isLoaded(id);
+			if(status == 1) return id+" is loading";
+			else if(status == 2) return id +" already filled";
+			else if(status == 0) {
+				dm.addUnderlying(getUnderlyingName(id), mem, -1, id);
+				if(mem){ 
+					return id+" loading started";
+				}
+				else { 
+					gui.updateDataTable(id, "instanced");
+					return id+" instanced";
+				}
+			}
+		
+		} else if(command.startsWith("clear")) {
+			//clear data
+			String split[] = command.split(" ");
+			if(split.length != 3) return "Invalid args";
+			int id = -1;
+			if(split[1].contains("id")) {
+				try { id = Integer.parseInt(split[2]); } catch(Exception e) {return "Invalid id " + e.getMessage();}
+				if(id == -1) return "Id out of range";
+			} else if(split[1].contains("stock")) {
+				id = this.convertId(split[2]);
+				if(id == -2) return "Invalid stock";
+			} else {
+				return "Invlaid item type";
+			}
+			
+			int status = isLoaded(id);
+			if(status == 1 || status == 2) {
+				dm.clearData(id);
+				underlyingStatus[id] = 0;
+				gui.updateDataTable(id, "empty");
+				System.gc();
+				return "Cleard: " + id;
+			} else if(status == 0) {
+				return "already clear";
+			}
+		}
+		return "Unknown command";
+	}
 	
 	public void updateTable(int id, String update) {
 		gui.updateDataTable(id, update);

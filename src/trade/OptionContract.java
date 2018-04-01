@@ -4,7 +4,6 @@ import data.OptionData;
 
 public class OptionContract {
 	
-	private String expiration;
 	private double strikePrice;
 	private double openPrice;
 	private boolean call;
@@ -12,7 +11,6 @@ public class OptionContract {
 	private double openSize;
 	
 	public void create(String expire, double strike, double openPrice, boolean call, double size) {
-		this.expiration = expire;
 		this.strikePrice = strike;
 		this.openPrice = openPrice;
 		this.call = call;
@@ -20,7 +18,6 @@ public class OptionContract {
 	}
 	
 	public void create(String expire, OptionData od, boolean b, double openSize) {
-		this.expiration = expire;
 		this.strikePrice = od.getStrike();
 		this.openPrice = od.getClose();
 		this.call = b;
