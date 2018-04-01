@@ -26,11 +26,12 @@ Data is managed in these ways:
 
 •	Data can be cleared via this command “clear id ‘id’”
 
-
-
-
-
 ![Alt text](https://snag.gy/dVSPrj.jpg)
+
+
+
+
+
 
 ![Alt text](https://snag.gy/oYVcyL.jpg)
 
