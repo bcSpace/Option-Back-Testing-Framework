@@ -63,6 +63,15 @@ Optimizing inputs is very important when building trading algorithms, this frame
 
 ![Alt text](https://snag.gy/WcmV8R.jpg)
 
+# Visualizing Performance and Calculating Relevant Stats
+
+This is very important for getting a better understanding of how a strategy performs and includes: 
+
+•	Recording of stats for the strategy (the table on the Testing tab), by default these stats are recorded; Daily Return, Daily Stdeva, Monthly Return, Annual Return, and Sharpe Ratio
+
+•	Displaying on a chart using JFreeChart various statistics, by default; Account value with no compounding and a histogram of daily returns.
+
+•	Strategy specific stats and charts can easily be added
 
 
 ![Alt text](https://snag.gy/oYVcyL.jpg)
