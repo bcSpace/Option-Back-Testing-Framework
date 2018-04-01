@@ -18,7 +18,7 @@ Data is managed in these ways:
 
 •	Data can be either instanced or loaded into memory, instanced is better for one-time large market wide tests, whereas memory based is great for optimizing inputs across a smaller pool of underlying’s
 
-•	Data is loaded in a separate thread, when a command to load the data is sent it is added to the data loading que, if the loading thread it not already loading then it will be notified that there is new data in the thread
+•	Data is loaded in a separate thread, when a command to load the data is sent it is added to the data loading que, if the loading thread it not already loading then it will be notified that there is new data in the que
 
 •	Data is loaded via this command “load id ‘the id’ ‘either ‘I’ for instanced or ‘m’ for memory’”
 
