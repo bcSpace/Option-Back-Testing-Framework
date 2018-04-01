@@ -73,7 +73,6 @@ This is very important for getting a better understanding of how a strategy perf
 
 •	Strategy specific stats and charts can easily be added
 
-
 ![Alt text](https://snag.gy/oYVcyL.jpg)
 
 ![Alt text](https://snag.gy/sIFjlu.jpg)
@@ -104,8 +103,55 @@ This package is for managing everything related to the data
 
 •	OptionData: Sub of ExpirationData, contains all pricing information and details on a single option contract
 
+### ui
 
+This package is everything related to what the user sees and controls
 
+•	Gui: Master frame, init point for Strategy Panels and strategies
+
+•	DataManagement: User control of data and displaying of data status
+
+•	StrategyPanel: Controlling strategy and displaying relevant data for the strategy
+
+### strategy
+
+This package is all the custom trading strategies and the abstract strategy class
+
+•	Strategy: Abstract class, contains all functions for brute testing, testing, calculating stats, portfolio calculations, chart displaying and gui updating
+
+•	SimpleStrangle: A simple strategy that will always look to have a short strangle deployed
+
+•	SimpleStranlgePortfolio: Portfolio implementation for testing purposes 
+
+### strategy.util
+
+This package is the utility for the strategy
+
+•	BruteModel: Creating all the possible input combinations when a brute test is made, and sorting based on ratings
+
+•	StrategyBrute: Stores the inputs for the brute and the ratings
+
+•	StrategyData: Storing data such as daily returns, deriving stats from the data and creating charts
+
+### trade
+
+This package is for managing trades and buying power calculations
+
+•	Trade: Storing trade related details such as; prices, ids, numbers, details. Also stores relevant trade actions
+
+•	OptionSpread: Used for calculating buying power on multiple option contracts
+
+•	OptionContract: A single option contract and its data, used for calculating buying power
+
+### stratmath
+
+• StratMath: Simple math for finding averages, Stdeva, etc.
+
+### loader
+
+• FileLoader: Loading files
+
+• FileWriter: Writing files
 
 
 
