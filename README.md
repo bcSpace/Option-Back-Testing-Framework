@@ -33,6 +33,17 @@ Data is managed in these ways:
 
 ![Alt text](https://snag.gy/dVSPrj.jpg)
 
+# Simulating the Market
+
+Simulating the market includes a few different things: 
+
+•	Progressing through each trading day 
+
+•	Managing all currently open trades and logging closed trades
+
+•	Calculating buying power reductions in various option spreads by stressing underlying price (like the way most brokers calculate buying power)
+
+•	Managing option contract expiration and data gaps
 
 
 
