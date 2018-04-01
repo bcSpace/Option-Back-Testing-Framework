@@ -47,6 +47,18 @@ Simulating the market includes a few different things:
 
 ![Alt text](https://snag.gy/f3M4K9.jpg)
 
+# Testing and Optimizing Algorithm Inputs
+
+Optimizing inputs is very important when building trading algorithms, this framework includes: 
+
+•	Testing individual input sets to get a deeper dive into its performance (Testing tab)
+
+•	Brute force testing a lot of different input combinations to find the most optimal input combination based on a certain rating for example annual return or Sharpe
+
+•	Brute force results display the top 50 for each rating, and the inputs can be copy pasted into the brute input field on the Testing tab
+
+•	A portfolio of underlying’s can also be brute tested for stronger results
+
 
 
 ![Alt text](https://snag.gy/oYVcyL.jpg)
