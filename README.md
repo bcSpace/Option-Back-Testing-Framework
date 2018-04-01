@@ -1,6 +1,6 @@
 # Option-Back-Testing-Framework
 
-### Class details and Architecture at bottom of readme
+### Class details and Architecture outline at bottom of readme
 
 # Summary
 
