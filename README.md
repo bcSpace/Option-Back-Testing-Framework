@@ -69,7 +69,7 @@ This is very important for getting a better understanding of how a strategy perf
 
 •	Recording of stats for the strategy (the table on the Testing tab), by default these stats are recorded; Daily Return, Daily Stdeva, Monthly Return, Annual Return, and Sharpe Ratio
 
-•	Displaying on a chart using JFreeChart various statistics, by default; Account value with no compounding and a histogram of daily returns.
+•	Displaying various statistics on a chart (using JFreeChart), by default; Account value with no compounding and a histogram of daily returns.
 
 •	Strategy specific stats and charts can easily be added
 
