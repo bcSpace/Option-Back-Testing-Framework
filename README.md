@@ -1,6 +1,6 @@
 # Option-Back-Testing-Framework
 
-### Class details and Architecture outline at bottom of readme
+### Package and Class outline at bottom
 
 # Summary
 
@@ -77,3 +77,35 @@ This is very important for getting a better understanding of how a strategy perf
 ![Alt text](https://snag.gy/oYVcyL.jpg)
 
 ![Alt text](https://snag.gy/sIFjlu.jpg)
+
+# Package and Class outline
+
+### main
+
+This package is the entry point
+
+•	Main: Entry point, changes look and feel to dark
+
+•	Controller: Middleman between Data Manager and strategies 
+
+### data
+
+This package is for managing everything related to the data
+
+•	DataManager: Used for managing the status of each underlying, manages the load que and loading on a separate thread
+
+•	UnderlyingData: Master data class for a single underlying handles the actual data loading
+
+•	DailyData: Sub of UnderlyingData, contains all underlying/expiration data for a single day
+
+•	GeneralData: Sub of DailyData, contains underlying specific data
+
+•	ExpirationData: Sub of DailyData, a single expiration worth of option data
+
+•	OptionData: Sub of ExpirationData, contains all pricing information and details on a single option contract
+
+
+
+
+
+
