@@ -30,7 +30,7 @@ Data is managed in these ways:
 
 
 
-![Alt text](https://snag.gy/bVTK3L.jpg)
+![Alt text](https://snag.gy/dVSPrj.jpg)
 
 ![Alt text](https://snag.gy/oYVcyL.jpg)
 
