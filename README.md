@@ -13,7 +13,9 @@ The goal of the project was to streamline the process for developing systemic au
 
 # Data Management
 The source of the data is from: https://datashop.cboe.com/option-quotes and is ran through a closed source data cleaner
+
 A single underlying that has 10+ years of data usually takes up about a 0.5gb of space after cleaned.
+
 Data is managed in these ways:
 
 •	Data can be either instanced or loaded into memory, instanced is better for one-time large market wide tests, whereas memory based is great for optimizing inputs across a smaller pool of underlying’s
