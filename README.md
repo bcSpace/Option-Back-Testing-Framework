@@ -1,6 +1,6 @@
 # Option-Back-Testing-Framework
 
-### Package and Class outline at bottom
+### Package/class summary and architecture outline at bottom
 
 # Summary
 
