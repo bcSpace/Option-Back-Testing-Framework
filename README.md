@@ -153,5 +153,19 @@ This package is for managing trades and buying power calculations
 
 • FileWriter: Writing files
 
+# Architecture outline
 
+There are 3 main processes 
+
+•	Data Management
+    o	Waits for input from the GUI from the data management panel console line and from when strategies are ran
+    
+    o	When new data requests are made, they are added into a loading que which is on a separate thread. If the data is instanced based, then the data is instanced skipping the loading que
+    
+    o	The loading thread waits until notified when the loading que is greater than 0
+
+
+•	Strategy process
+
+•	
 
