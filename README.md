@@ -6,7 +6,7 @@
 
 
 # The Goal
-The goal of the project was to streamline the process for developing systemic automated option trading strategies. The solution was to build a framework to manage all the moving parts including: 
+The goal of the project was to streamline the process for developing systematic automated option trading strategies. The solution was to build a framework to manage all the moving parts including: 
 
 •	Data management
 
