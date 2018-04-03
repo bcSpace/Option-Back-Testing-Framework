@@ -182,7 +182,7 @@ There are 3 main processes
 	
 	When new data requests are made, they are added into a loading que which is on a separate thread. If the data is instanced based, then the data is instanced skipping the loading que
 	
-	The loading thread waits until notified when the loading que is greater than 0
+	The loading thread waits until notified when the loading que is 0
 
 •	Strategy process
 
