@@ -4,8 +4,27 @@
 
 # Summary
 
+Currently the framework allows for quick strategy creation and testing, only a few steps are needed to start testing a strategy with this framework
 
-# The Goal
+	1.	Create a class that extends Strategy.java
+	
+	2.	In setPortfolio() set if it is a portfolio testing or not, if so set the sub strategy in createPortStrategy()
+	
+	3.	In the makeInputs() define all the inputs for the algorithm and any custom stats/charts you want displayed
+	
+	4.	startPrep() anything that needs to be done before the test is ran
+	
+	5.	tradingDay(DailyData day) this is were the logic for the trading algorithm goes, the backend will pass each trading day within the dataset chronologically
+	
+	6.	finish() calculate any custom strategy stats and display any custom charts
+	
+	7.	Finally add to the GUI within the Gui.java class
+	
+Once all those steps are complete, then the framework can be used to optimize inputs, visualize performance and conduct testing in an efficient manner. 
+
+An example of this working is the SimpleStranlge.java class within the strategy package. 
+
+# The Goal of the framework
 The goal of the project was to streamline the process for developing systematic automated option trading strategies. The solution was to build a framework to manage all the moving parts including: 
 
 •	Data management
