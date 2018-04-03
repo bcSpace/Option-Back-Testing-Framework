@@ -178,7 +178,7 @@ There are 3 main processes
 
 	The GUI is responsible for taking user inputs and displaying information
 	
-	It takes users controls for running strategy tests, managing data, and selecting what data to be displayed
+	It takes users controls for running strategy tests, managing data, and selecting what data to be displayed. Also has a console for controlling data
 	
 	It displays key stats, inputs, charting and brute outputs 
 
