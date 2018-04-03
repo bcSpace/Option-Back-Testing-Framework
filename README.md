@@ -167,5 +167,19 @@ There are 3 main processes
 
 •	Strategy process
 
-•	
+	The strategy will wait for input from the GUI, which will be the data to be tested and the inputs
+	
+	Depending on the type of request it will either run a brute test for optimizing inputs or run a single test to get a better idea of strategy performance. The tests are ran on a separate thread
+	
+	When the tests are done the outputs are pushed back to the GUI
+
+
+•	GUI process 
+
+	The GUI is responsible for taking user inputs and displaying information
+	
+	It takes users controls for running strategy tests, managing data, and selecting what data to be displayed
+	
+	It displays key stats, inputs, charting and brute outputs 
+
 
