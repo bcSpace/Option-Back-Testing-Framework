@@ -20,7 +20,7 @@ Currently the framework allows for quick strategy creation and testing, only a f
 	
 	7.	Finally add to the GUI within the Gui.java class
 	
-Once all those steps are complete, then the framework can be used to optimize inputs, visualize performance and conduct testing in an efficient manner. 
+Once all those steps are complete, the framework can then be used to optimize inputs, visualize performance and conduct testing in an efficient manner. 
 
 An example of this working is the SimpleStranlge.java class within the strategy package. 
 
