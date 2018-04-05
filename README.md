@@ -1,5 +1,7 @@
 # Option-Back-Testing-Framework
 
+### Sample work from Space Capital
+
 ### Package/class summary and architecture outline at bottom
 
 # Summary
